@@ -1,0 +1,11 @@
+<p>Salut ! {{nom}}</p>
+<br/>
+<p> merci de choisire un button</p>
+
+<button (click)="LeChoix('1')">1</button>
+<button (click)="LeChoix('2')">2</button>
+<button (click)="LeChoix('3')">3</button>
+<br/>
+<p *ngIf='choixs'>
+    tu as choisi <span [innerHTML]='choixs'></span>
+</p>
